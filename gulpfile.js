@@ -50,3 +50,9 @@ gulp.task('css', function() {
     .pipe(gulp.dest(folder.build + 'css/'));
 
 });
+
+gulp.task('watch', function() {
+  
+  gulp.watch(folder.src + 'sass/**/*', gulp.series('css'));
+  
+});

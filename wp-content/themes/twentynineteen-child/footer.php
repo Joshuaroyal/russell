@@ -15,14 +15,18 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	</div><!-- #page -->
+	
+	<footer id="colophon" class="site-footer container-fluid px-0">
 		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 		<div class="site-info">
 			<?php $blog_info = get_bloginfo( 'name' ); ?>
 			<?php if ( ! empty( $blog_info ) ) : ?>
-				<span>Copyright © <?php echo date('Y'); ?> | </span>
-				<a class="btn btn-link text-center" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-				<span> | All Rights Reserved</span>
+				<p class="text-center bg-primary mb-0 py-1">
+				  <span class="btn">Copyright © <?php echo date('Y'); ?></span>
+				  |<a class="btn btn-link text-center" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>|
+				  <span class="btn">All Rights Reserved</span>
+				</p>
 			<?php endif; ?>
 			<?php
 			if ( function_exists( 'the_privacy_policy_link' ) ) {
@@ -45,7 +49,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
-</div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

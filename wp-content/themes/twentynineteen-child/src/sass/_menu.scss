@@ -1,0 +1,10 @@
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: $primary;
+  }
+  
+.navbar {
+    padding: 0rem 1rem;
+}
